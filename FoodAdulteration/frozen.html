@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frozen Foods Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #5dade2;
+      --secondary: #eaf2f8;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #eaf2f8, #d6eaf8);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #5dade2, #3498db);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #d6eaf8;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🧊";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #21618c;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Frozen Foods</h1>
+    <p>🧊 Simple tests to detect adulterants in frozen vegetables, meats, and ready-to-eat items</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Formalin in Frozen Fish</h2>
+        <p>Dip fish in warm water and smell. A pungent chemical odor indicates formalin, used illegally as a preservative.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Excess Ice Coating</h2>
+        <p>Check for thick ice layers on frozen items. This may be used to increase weight and hide spoilage.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Repeated Freezing</h2>
+        <p>Look for ice crystals inside packaging. Repeated freezing causes texture breakdown and may indicate poor handling.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Artificial Coloring in Frozen Vegetables</h2>
+        <p>Soak vegetables in water. If color leaches out, synthetic dyes may have been used to enhance appearance.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Spoiled Frozen Meat</h2>
+        <p>Thaw and inspect for sour smell, slimy texture, or discoloration. These are signs of spoilage or chemical treatment.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Preservative Overuse in Ready Meals</h2>
+        <p>Check labels for sodium benzoate or sorbic acid. Excessive use may cause allergic reactions or digestive issues.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Contaminated Ice Cubes</h2>
+        <p>Cloudy ice or uneven melting may indicate use of unfiltered water. Avoid if hygiene is questionable.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Texture Loss in Frozen Paneer</h2>
+        <p>Frozen paneer should remain firm after thawing. Spongy or crumbly texture may indicate poor quality or additives.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

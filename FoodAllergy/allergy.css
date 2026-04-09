@@ -1,0 +1,169 @@
+/* Global Page Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f7f8fa;
+}
+
+/* Header Section */
+header {
+    background: #58a4b0;
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Main Layout Container */
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 32px auto 0 auto;
+    gap: 30px;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 3;
+}
+
+/* Sidebar Section */
+.sidebar {
+    flex: 1;
+    min-width: 270px;
+    background: #fff;
+    padding: 24px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #0001;
+}
+
+/* Category Navigation Buttons */
+.categories-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+    margin-bottom: 20px;
+}
+
+/* Individual category button */
+.category-btn {
+    padding: 8px 18px;
+    background: #e1ecf4;
+    color: #397193;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Active & hover state for buttons */
+.category-btn.active,
+.category-btn:hover {
+    background: #58a4b0;
+    color: #fff;
+}
+
+/* Headings */
+h2 {
+    margin-top: 24px;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+}
+
+/* Allergen Cards Grid */
+.allergens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 18px;
+}
+
+/* Individual allergen card */
+.allergen-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0001;
+    transition: box-shadow 0.2s, background 0.2s;
+}
+
+/* Hover effect on cards */
+.allergen-card:hover {
+    box-shadow: 0 4px 24px #0002;
+    background: #e7f5fa;
+}
+
+/* Allergen name text */
+.allergen-name {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #24334f;
+}
+
+/* Allergen Details Section */
+.details {
+    margin-top: 28px;
+    background: #d9f3ed;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Details section title */
+.details-title {
+    font-size: 1.2em;
+    color: #11978d;
+    margin-bottom: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Footer Section */
+footer {
+  background-color: #58a4b0;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer-text span {
+  color: #7e9ef0;
+  font-weight: 500;
+}
+
+.home-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7e9ef0;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #7e9ef0;
+}

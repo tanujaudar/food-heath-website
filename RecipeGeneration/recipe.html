@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leftover Food Recipe Generator</title>
+  <link rel="stylesheet" href="recipe.css"/>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand"> Recipe Generation🍽️</div>
+  </nav>
+
+  <header>
+    <h1>Leftover Food Recipe Generator</h1>
+    <p>Select your available ingredients to get recipe ideas!</p>
+  </header>
+
+  <main>
+  <div class="container">
+    <section id="ingredients">
+      <h2>Select Ingredients</h2>
+      <input type="text" id="ingredient-search" placeholder="Search ingredients..." />
+
+        <div class="category">
+          <h3>Fruits</h3>
+          <label><input type="checkbox" value="banana">banana</label>
+          <label><input type="checkbox" value="apple">Apple</label>
+          <label><input type="checkbox" value="orange">Orange</label>
+          <label><input type="checkbox" value="Grapes">Grapes</label> <label><input type="checkbox" value="Watermelon">Watermelon</label> <label><input type="checkbox" value="Straberry">Strawberry</label> <label><input type="checkbox" value="Pineapple">Pineapple</label> <label><input type="checkbox" value="Kiwi">Kiwi</label>
+          <label><input type="checkbox" value="Avocado">Avocado</label>
+          <label><input type="checkbox" value="Coconut">Coconut</label> <label><input type="checkbox" value="Cherry">Cherry</label> <label><input type="checkbox" value="Lemon"> Lemon</label> <label><input type="checkbox" value="Blueberry">Blueberry</label> <label><input type="checkbox" value="Guava">Guava</label>
+          <label><input type="checkbox" value="Lychee">Lychee</label> <label><input type="checkbox" value=" Plum"> Plum</label> <label><input type="checkbox" value="Pomegranate">Pomegranate</label> <label><input type="checkbox" value=" Fig"> Fig</label> 
+          <label><input type="checkbox" value="Muskmelon">Muskmelon</label> <label><input type="checkbox" value="Peach">Peach</label>
+        </div>
+
+        <div class="category">
+          <h3>Vegetables</h3>
+          <label><input type="checkbox" value="tomato">Tomato</label>
+          <label><input type="checkbox" value="onion">Onion</label>
+          <label><input type="checkbox" value="potato">Potato</label>
+          <label><input type="checkbox" value="carrot">carrot</label>
+          <label><input type="checkbox" value=" Broccoli"> Broccoli</label>
+          <label><input type="checkbox" value="Spinach">Spinach</label>
+          <label><input type="checkbox" value=" Cabbage"> Cabbage</label>
+          <label><input type="checkbox" value="Cauliflower">Cauliflower</label>
+          <label><input type="checkbox" value="Bell Pepper">Bell Pepper</label>
+          <label><input type="checkbox" value="beetroot">beetroot</label>
+          <label><input type="checkbox" value="sweet potato">sweet potato</label>
+          <label><input type="checkbox" value="garlic">garlic</label>
+          <label><input type="checkbox" value="asparagus">asparagus</label>
+          <label><input type="checkbox" value="pumpkin">pumpkin</label>
+          <label><input type="checkbox" value="okra">okra</label>
+          <label><input type="checkbox" value="cucumber">cucumber</label>
+          <label><input type="checkbox" value="soybean">soybean</label>
+          <label><input type="checkbox" value="ginger">ginger</label>
+          <label><input type="checkbox" value="corn">corn</label>
+          <label><input type="checkbox" value="chili">chili</label>
+          <label><input type="checkbox" value="mushrooms">mushrooms</label>
+          <label><input type="checkbox" value="eggplant">eggplant</label>
+        </div>
+
+        <div class="category">
+          <h3>cereals and pulses</h3>
+          <label><input type="checkbox" value="rice">rice</label>
+          <label><input type="checkbox" value="wheat">wheat</label>
+          <label><input type="checkbox" value="Corn">Corn</label>
+          <label><input type="checkbox" value="sorghum">sorghum</label>
+          <label><input type="checkbox" value="Bajra">Bajra</label>
+          <label><input type="checkbox" value="barley">barley</label>
+          <label><input type="checkbox" value="Masoor dal">Masoor dal</label>
+          <label><input type="checkbox" value="Tur dal">Tur dal</label>
+          <label><input type="checkbox" value="Moong dal">Moong dal</label>
+          <label><input type="checkbox" value="Urad dal">Urad dal</label>
+          <label><input type="checkbox" value="Chana">Chana</label>
+          <label><input type="checkbox" value=" Rajma"> Rajma</label>
+          <label><input type="checkbox" value=" cowpea">cowpea</label>
+          <label><input type="checkbox" value=" Oats">Oats</label>
+          <label><input type="checkbox" value=" rye">rye</label>
+        </div>
+      
+        <div class="category">
+          <h3>Dairy</h3>
+          <label><input type="checkbox" value="bread">Bread</label>
+          <label><input type="checkbox" value="milk">Milk</label>
+          <label><input type="checkbox" value="paneer">paneer</label>
+          <label><input type="checkbox" value="cheese">Cheese</label>
+          <label><input type="checkbox" value="yogurt">Yogurt</label>
+          <label><input type="checkbox" value="butter">butter</label>
+          <label><input type="checkbox" value="Cream">Cream</label>
+          <label><input type="checkbox" value="Condensed Milk">Condensed Milk</label>
+          <label><input type="checkbox" value="Ghee">Ghee</label>
+          <label><input type="checkbox" value="egg">Egg</label>
+          <label><input type="checkbox" value="whipped cream">whipped cream</label>
+          <label><input type="checkbox" value="milk powder">milk powder</label>
+          <label><input type="checkbox" value="egg">Egg</label>
+          <label><input type="checkbox" value="vanilla milk">vanilla mik</label>
+        </div>
+
+        <div class="category">
+          <h3>spices and herbs</h3>
+          <label><input type="checkbox" value="spices">Spices(your choice)</label>
+          <label><input type="checkbox" value="salt">salt</label>
+          <label><input type="checkbox" value="basil">basil</label>
+          <label><input type="checkbox" value="bay leaf">bay leaf</label>
+          <label><input type="checkbox" value="Cloves">Cloves</label>
+          <label><input type="checkbox" value="Anise">Anise</label>
+          <label><input type="checkbox" value="cardamon">cardamon</label>
+          <label><input type="checkbox" value="Cinnamon">Cinnamon</label>
+          <label><input type="checkbox" value="Cumin">Cumin</label>
+          <label><input type="checkbox" value="cayenne pepper">cayenne pepper</label>
+          <label><input type="checkbox" value="Coriander">Coriander</label>
+          <label><input type="checkbox" value="Chives">Chives</label>
+          <label><input type="checkbox" value="Caraway">Caraway</label>
+          <label><input type="checkbox" value="Turmeric">Turmeric</label>
+          <label><input type="checkbox" value="chilli powder">chilli powder</label>
+          <label><input type="checkbox" value="lemongrass">lemongrass</label>
+          <label><input type="checkbox" value="Amchoor">Amchoor</label>
+        </div>
+
+        <div class="category">
+          <h3>condiments/dressings</h3>
+          <label><input type="checkbox" value="honey">Honey</label>
+          <label><input type="checkbox" value="Mayonnaise">Mayonnaise</label>
+          <label><input type="checkbox" value="Soy sauce">Soy sauce</label>
+          <label><input type="checkbox" value="Barbecue sauce">Barbecue sauce</label>
+          <label><input type="checkbox" value="Mustard">Mustard</label>
+          <label><input type="checkbox" value="Hot sauce">Hot sauce</label>
+          <label><input type="checkbox" value="Ketchup">Ketchup</label>
+          <label><input type="checkbox" value="Pesto">Pesto</label>
+          <label><input type="checkbox" value="relish">relish</label>
+          <label><input type="checkbox" value="Fish sauce">Fish sauce</label>
+          <label><input type="checkbox" value="olive oil">olive oil</label>
+          <label><input type="checkbox" value="Chili oil">Chili oil</label>
+          <label><input type="checkbox" value="Oyster sauce">Oyster sauce</label>
+          <label><input type="checkbox" value="Peanut sauce">Peanut sauce</label>
+          <label><input type="checkbox" value=" Sesame oil">Sesame oil</label>
+          <label><input type="checkbox" value=" Alfredo Sauce">Alfredo Sauce</label>
+          <label><input type="checkbox" value="Caramel">Caramel</label>
+          <label><input type="checkbox" value=" Balsamic vinegar">Balsamic vinegar</label>
+        </div>
+
+        <div class="category">
+          <h3>Nuts and seeds</h3>
+          <label><input type="checkbox" value="almonds">almonds</label>
+          <label><input type="checkbox" value=" brazil nuts"> brazil nuts</label>
+          <label><input type="checkbox" value="cashews">cashews</label>
+          <label><input type="checkbox" value="chestnuts">chestnuts</label>
+          <label><input type="checkbox" value="hazelnuts">hazelnuts</label>
+          <label><input type="checkbox" value="peanuts">peanuts</label>
+          <label><input type="checkbox" value="pistachios">pistachios</label>
+          <label><input type="checkbox" value="walnuts">walnuts</label>
+          <label><input type="checkbox" value="chia seeds">chia seeds</label>
+          <label><input type="checkbox" value="flax seeds">flax seeds</label>
+          <label><input type="checkbox" value="hemp seeds">hemp seeds</label>
+          <label><input type="checkbox" value="pumpkin seeds">pumpkin seeds</label>
+          <label><input type="checkbox" value="sesame seeds">sesame seeds</label>
+          <label><input type="checkbox" value="sunflower seeds">sunflower seeds</label>
+          <label><input type="checkbox" value="poppy seeds">poppy seeds</label>
+          <label><input type="checkbox" value="mustard seeds.">mustard seeds.</label>
+        </div>
+
+        <button onclick="generateRecipes()">Generate Recipes</button>
+
+    </section>
+        
+    <section id="recipes">
+      <h2>Recipes</h2>
+      <div id="recipe-list"></div>
+    </section>
+
+  </div>
+  </main>
+
+  <footer>
+        <p>Know Your Bites - Made with care .</p>
+        <a href="../index.html" class="home-btn">Home</a>
+  </footer>
+
+    <script src="recipe.js"></script>
+</body>
+</html>

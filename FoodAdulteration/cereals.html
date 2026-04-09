@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cereals and Pulses Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #27ae60;
+      --secondary: #eafaf1;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #eafaf1, #d4efdf);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #27ae60, #1e8449);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #d5f5e3;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🌾";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #145a32;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cereals and Pulses</h1>
+    <p>🌿 Simple tests to detect adulterants in grains, rice, and lentils</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Stones in Pulses</h2>
+        <p>Visual inspection is the easiest method. Spread the pulses on a flat surface and remove visible stones manually.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Lead Chromate in Dal</h2>
+        <p>Add a few drops of hydrochloric acid. A pink color indicates the presence of toxic lead chromate.Need lab test.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Iron Pieces in Rice</h2>
+        <p>Use a magnet to detect iron filings or fragments mixed with rice grains.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Colored Grains in Pulses</h2>
+        <p>Rub the grains between moist palms. If color comes off, synthetic dye has been used to enhance appearance.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Mud Balls in Wheat</h2>
+        <p>Soak wheat in water. Mud balls will dissolve or disintegrate, while real grains remain intact.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Polished Rice with Glucose or Talc</h2>
+        <p>Rub rice between fingers. If it feels powdery or leaves a white residue, it may be coated with glucose or talc.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Kesari Dal in Chana Dal</h2>
+        <p>Kesari dal is banned due to neurotoxicity. Lab testing is recommended for accurate detection.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Insect Eggs in Stored Grains</h2>
+        <p>Soak grains in water. Eggs and larvae float to the surface, while clean grains sink.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

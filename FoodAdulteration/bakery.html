@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bakery Products Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #d35400;
+      --secondary: #fff2e6;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #fff2e6, #fddcc3);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ffe6d5;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🧁";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #a84300;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bakery Products</h1>
+    <p>🍞 Simple tests to detect adulterants in bread, cakes, and pastries</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Use of Non-Permitted Colors</h2>
+        <p>Rub the surface of colored bakery items with a moist cotton ball. If color transfers, synthetic dye may be present.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Excess Baking Soda in Bread</h2>
+        <p>Excess soda gives a bitter taste and may cause bloating. Check ingredient labels and taste carefully.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Use of Vanaspati in Cakes</h2>
+        <p>Vanaspati is sometimes used instead of butter. It leaves a greasy texture and lacks natural aroma.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Synthetic Flavor in Biscuits</h2>
+        <p>Artificial flavors may leave a chemical aftertaste. Natural flavors are subtle and pleasant.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Contaminated Cream in Pastries</h2>
+        <p>Check for sour smell or curdled texture. Spoiled cream may cause stomach discomfort.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Use of Saccharin in Low-Calorie Bakes</h2>
+        <p>Saccharin leaves a metallic aftertaste. Check labels for approved sweeteners like stevia or sucralose.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Mold Growth in Stored Bread</h2>
+        <p>Inspect for green or black spots. Moldy bread should be discarded immediately.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Excess Oil in Fried Bakery Items</h2>
+        <p>Touch the surface. If it feels overly greasy or leaves oil stains, it may contain excess reused oil.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* Root Variables (Theme Colors) */
+:root {
+    --primary-green: #38a169;
+    --secondary-lime: #bbf7d0;
+    --text-dark: #2d3748;
+    --background-light: #f7fdee;
+    --gray-light: #e5e7eb;
+}
+
+/* Global Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Header & Navigation Bar */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),
+                0 2px 4px -2px rgba(0,0,0,0.1);
+}
+
+/* Wrapper for navbar content */
+.nav-container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Top row with website title */
+.nav-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Website title styling */
+.site-title {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: var(--primary-green);
+    letter-spacing: -0.05em;
+    text-decoration: none;
+}
+
+/* Increase title size on larger screens */
+@media (min-width: 640px) {
+    .site-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* Bottom navigation links */
+.nav-bottom-row {
+    display: none;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--gray-light);
+}
+
+/* Show nav links */
+@media (min-width: 768px) {
+    .nav-bottom-row {
+        display: block;
+    }
+
+    .nav-bottom-row > div {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+
+    /* More spacing on large screens */
+    @media (min-width: 1024px) {
+        .nav-bottom-row > div {
+            column-gap: 2rem;
+        }
+    }
+}
+
+/* Navigation links */
+.nav-link {
+    color: #4a5568;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: color 150ms, background-color 150ms;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    color: var(--primary-green);
+    background-color: var(--secondary-lime);
+}
+
+/* Hero Section */
+.hero-main {
+    max-width: 1280px;
+    margin: auto;
+    padding: 4rem 1rem 6rem;
+}
+
+/* Main heading */
+.hero-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+/* Responsive font sizes */
+@media (min-width: 640px) {
+    .hero-title { font-size: 3rem; }
+}
+@media (min-width: 768px) {
+    .hero-title { font-size: 3.75rem; }
+}
+
+/* Highlighted text */
+.hero-title .highlight {
+    color: var(--primary-green);
+}
+
+/* Subtitle text */
+.hero-subtitle {
+    margin-top: 0.75rem;
+    color: #6b7280;
+    font-size: 1.125rem;
+}
+
+/* Action Button */
+.hero-cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Button styling */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    color: white;
+    background-color: var(--primary-green);
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
+                0 4px 6px -4px rgba(0,0,0,0.1);
+    transition: all 300ms;
+}
+
+/* Hover animation */
+.cta-button:hover {
+    background-color: #276c49;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+/* Grid layout for feature cards */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+/* Columns on desktops */
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Individual feature card */
+.feature-card {
+    background-color: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(56,161,105,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: box-shadow 300ms;
+}
+
+/* Card hover effect */
+.feature-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),
+                0 8px 10px -6px rgba(0,0,0,0.1);
+}
+
+/* Feature title */
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 0.75rem;
+}
+
+/* Feature description */
+.feature-card p {
+    color: #4a5568;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-green);
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Footer content wrapper */
+.footer-content {
+    max-width: 1280px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+/* Disclaimer text */
+.footer-content .disclaimer {
+    font-size: 0.875rem;
+    color: #90ee90;
+}

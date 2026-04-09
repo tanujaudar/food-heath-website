@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beverages Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #f39c12;
+      --secondary: #fff9e6;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #fff9e6, #ffe5b4);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #f39c12, #e67e22);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #fff3d1;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🧃";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #d35400;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Beverages</h1>
+    <p>🍹 Simple tests to detect adulterants in juices, soft drinks, and tea</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Artificial Color in Fruit Juices</h2>
+        <p>Mix juice with water. If color separates or settles, synthetic dye may be present.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Excess Sugar in Soft Drinks</h2>
+        <p>Evaporate a small amount of the drink. Excess sugar leaves behind sticky residue or crystals.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Metal Contamination in Packaged Drinks</h2>
+        <p>Check for metallic taste or odor. If suspected, avoid consumption and report to authorities.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Iron Filings in Tea Leaves</h2>
+        <p>Spread tea leaves on paper and move a magnet over them. Iron filings will be attracted to the magnet.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Used Tea Leaves in Packaged Tea</h2>
+        <p>Boil tea and spread the residue. Used leaves appear dull and brittle compared to fresh ones.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Synthetic Flavor in Soft Drinks</h2>
+        <p>Artificial flavors often leave a chemical aftertaste. Natural drinks taste fresh and fruity.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Caffeine Overdose in Energy Drinks</h2>
+        <p>Check the label for caffeine content. Excessive intake may cause restlessness or insomnia.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Contaminated Ice in Street Beverages</h2>
+        <p>Ice made from unfiltered water may appear cloudy and melt unevenly. Avoid if hygiene is doubtful.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

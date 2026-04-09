@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salt and Salt Products Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #7f8c8d;
+      --secondary: #f4f6f7;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #f4f6f7, #d5dbdb);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #95a5a6, #7f8c8d);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ecf0f1;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🧂";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #566573;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Salt and Salt Products</h1>
+    <p>🧂 Simple tests to detect adulterants in table salt and related products</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Chalk Powder in Salt</h2>
+        <p>Dissolve salt in water. Chalk powder settles at the bottom, while pure salt dissolves completely.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. White Powder Adulterants</h2>
+        <p>Rub salt between fingers. If it feels gritty or leaves residue, it may contain insoluble impurities.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Iodine Deficiency in Iodized Salt</h2>
+        <p>Add starch solution and lemon juice to salt. A blue color confirms iodine presence; no color means deficiency.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Washing Soda in Salt</h2>
+        <p>Place a drop of the solution onto a strip of red litmus paper using a glass rod. If the red litmus paper turns blue, the salt is basic, indicating the presence of washing soda. </p>
+      </div>
+
+      <div class="card">
+        <h2>5. Presence of Sand</h2>
+        <p>Spread salt on a flat surface. Sand particles are visible and do not dissolve in water.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Moisture in Salt</h2>
+        <p>Pure salt is dry and free-flowing. Moist salt clumps together and may indicate poor storage or contamination.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Bitter Taste in Salt</h2>
+        <p>Bitter taste may indicate magnesium salts or chemical contamination. Avoid consumption and report if persistent.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Artificial Whitening Agents</h2>
+        <p>Excessively white salt may contain bleaching agents. Check for unnatural brightness and chemical smell.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

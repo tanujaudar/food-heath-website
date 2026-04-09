@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meat, Fish & Eggs Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #c0392b;
+      --secondary: #fdecea;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #fdecea, #f8d7d0);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #e74c3c, #c0392b);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #fdded5;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🍖";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #922b21;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meat, Fish & Eggs</h1>
+    <p>🥩 Simple tests to detect adulterants in animal-based foods</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Rotten Meat</h2>
+        <p>Check for foul odor, slimy texture, and greenish discoloration. Fresh meat should be firm and odorless.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Formalin in Fish</h2>
+        <p>Dip a piece of fish in water and smell. Formalin-preserved fish has a pungent chemical odor and stiff texture.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Ammonia in Frozen Meat</h2>
+        <p>Thaw and smell the meat. Ammonia-treated meat emits a sharp, irritating odor and may cause eye discomfort.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Synthetic Coloring in Meat</h2>
+        <p>Rub the surface with moist cotton. If color transfers, synthetic dye may have been used to enhance appearance.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Spoiled Eggs</h2>
+        <p>Place eggs in water. Fresh eggs sink and lie flat; spoiled eggs float due to gas buildup inside the shell.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Stale Fish</h2>
+        <p>Check for sunken eyes, dull scales, and soft belly. Fresh fish has bright eyes and firm flesh.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Contaminated Chicken</h2>
+        <p>Inspect for sticky surface, sour smell, and excessive water retention. These may indicate spoilage or chemical treatment.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Adulterated Minced Meat</h2>
+        <p>Check for uneven texture and color. Adulterated mince may contain fillers like starch or offal.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

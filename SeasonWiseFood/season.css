@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefcf6;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color:#dc879b;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Season Grid on Home Page */
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Season Cards */
+.season-card {
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.season-card:hover {
+  transform: scale(1.03);
+}
+
+/* Season Colors */
+.spring { background-color: #e0f7fa; }
+.summer { background-color: #fff9c4; }
+.monsoon { background-color: #c5cae9; }
+.winter { background-color: #ffe0b2; }
+.autumn { background-color: #cdf2b4; }
+
+/* Season Buttons */
+.season-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.season-button:hover {
+  background-color: #388e3c;
+}
+
+/* Seasonal Headers */
+.spring-header { background-color: #c8e6c9; }
+.summer-header { background-color: #fff176; }
+.monsoon-header { background-color: #b3e5fc; }
+.winter-header { background-color: #ffcc80; }
+
+.season-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+/* Back Link */
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+.info-section {
+  background: #fdf6e3;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe4e1;
+  font-size: 0.9rem;
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Milk and Milk Products Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #3498db;
+      --secondary: #eaf2f8;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #eaf2f8, #d6eaf8);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #3498db, #2e86c1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #d6eaf8;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🥛";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #21618c;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Milk and Milk Products</h1>
+    <p>🧪 Simple tests to detect adulterants in milk, paneer, and dairy items</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Water in Milk</h2>
+        <p>Place a drop of milk on a polished surface. If it flows quickly without leaving a white trail, water may be present.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Starch in Milk</h2>
+        <p>Add a few drops of iodine solution(available at most pharmacies) . A blue coloration indicates the presence of starch.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Detergent in Milk</h2>
+        <p>Shake 5–10 ml of milk with an equal amount of water. Excess foam formation suggests detergent adulteration.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Synthetic Milk</h2>
+        <p>Synthetic milk tastes bitter, feels soapy when rubbed, and turns yellow on heating. Avoid consumption.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Urea in Milk</h2>
+        <p>Mix milk with soybean powder and  arhar (pigeon pea) powder. A blue color indicates urea presence. Lab confirmation recommended.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Formalin in Milk</h2>
+        <p>Add a few drops of sulfuric acid (Cleaning Products) to the milk. A violet ring at the junction indicates formalin, a harmful preservative.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Starch in Paneer</h2>
+        <p>Boil a small piece of paneer in water, cool, and add iodine. A blue color confirms starch adulteration.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Soap in Ghee</h2>
+        <p>Mix ghee with water and shake. Foam formation suggests soap adulteration.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

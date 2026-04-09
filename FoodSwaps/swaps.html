@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food Swap Recipes | Know Ur Bites</title>
+    <link rel="stylesheet" href="swaps.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Healthy Food Swaps</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Smart Choices for a Healthier You</h2>
+        <p>Discover simple swaps that make your meals more nutritious, delicious, and calorie-conscious—without
+            sacrificing flavor.</p>
+
+        <div class="search-container">
+            <input type="text" id="swapSearch" onkeyup="filterSwaps()"
+                placeholder="Search for food to swap (e.g., 'rice', 'milk', 'sugar')...">
+        </div>
+    </section>
+
+    <section class="swap-list">
+        <h2 id="swapListTitle">100+ Healthy Swap Ideas</h2>
+
+        <div class="swap-grid" id="swapGrid">
+
+            <div class="swap-card">
+                <img src="../images/white rice.jpg" alt="White rice" />
+                <h3>White Rice</h3>
+                <div class="swap-meta">200 kcal (per cup)</div>
+                <p><strong>Swap to:</strong>Cauliflower Rice (25 kcal) </p>
+                <p><strong>Recipe:</strong> Grate cauliflower, sauté with garlic and olive oil for 5–7 mins.</p>
+            </div>
+
+            <div class="swap-card">
+                <img src="../images/pasta.jpg" alt="Pasta" />
+                <h3>Pasta</h3>
+                <div class="swap-meta">220 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Zucchini Noodles (30 kcal)</p>
+                <p><strong>Recipe:</strong> Spiralize zucchini, sauté with marinara sauce and herbs.</p>
+            </div>
+
+            <div class="swap-card">
+                <img src="../images/yogurt.jpg" alt="Sour cream" />
+                <h3>Sour cream</h3>
+                <div class="swap-meta">120 kcal (per 2 tbsp)</div>
+                <p><strong>Swap to:</strong> Greek Yogurt (60 kcal)</p>
+                <p><strong>Recipe:</strong> Use in dips or as a topping with lemon and dill.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/butter.jpg" alt="Butter" />
+                <h3>Butter</h3>
+                <div class="swap-meta">100 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Avocado Spread (50 kcal)</p>
+                <p><strong>Recipe:</strong> Mash avocado with lime and chili flakes for toast.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/chips.jpg" alt="Potato chips" />
+                <h3>Potato chips</h3>
+                <div class="swap-meta">150 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Roasted Chickpeas (140 kcal)</p>
+                <p><strong>Recipe:</strong> Toss chickpeas with olive oil and paprika, roast until crispy.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/icecream.jpg" alt="Ice cream" />
+                <h3>Ice cream</h3>
+                <div class="swap-meta">250 kcal</div>
+                <p><strong>Swap to:</strong> Banana Ice Cream (100 kcal)</p>
+                <p><strong>Recipe:</strong> Blend frozen bananas until smooth. Add cocoa or peanut butter.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/paneer cubes.png" alt="Fried Paneer Cubes" />
+                <h3>Fried Paneer Cubes</h3>
+                <div class="swap-meta">100 kcal (per cube)</div>
+                <p><strong>Swap to:</strong> Tofu Cubes (50 kcal)</p>
+                <p><strong>Recipe:</strong> Marinate and shallow-fry tofu for a high-protein, lower-fat alternative.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/totillas.jpg" alt="Tortillas" />
+                <h3>Tortillas</h3>
+                <div class="swap-meta">150 kcal</div>
+                <p><strong>Swap to:</strong> Lettuce Wraps (15 kcal)</p>
+                <p><strong>Recipe:</strong> Fill lettuce leaves with grilled chicken and veggies.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/soda.jpg" alt="Soda" />
+                <h3>Soda</h3>
+                <div class="swap-meta">140 kcal</div>
+                <p><strong>Swap to:</strong> Infused Water (0 kcal)</p>
+                <p><strong>Recipe:</strong> Add citrus, cucumber, or mint to chilled water.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/milkchoco.jpg" alt="Milk chocolate" />
+                <h3>Milk chocolate</h3>
+                <div class="swap-meta">80 kcal (per square)</div>
+                <p><strong>Swap to:</strong> Dark Chocolate (50 kcal)</p>
+                <p><strong>Recipe:</strong> Enjoy 70%+ dark chocolate with almonds or sea salt.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/flavour yogurt.jpg" alt="Flavored yogurt" />
+                <h3>Flavored yogurt</h3>
+                <div class="swap-meta">180 kcal</div>
+                <p><strong>Swap to:</strong> Chia Pudding (120 kcal)</p>
+                <p><strong>Recipe:</strong> Mix chia seeds with almond milk and honey, refrigerate overnight.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/fries.jpg" alt="French fries" />
+                <h3>French fries</h3>
+                <div class="swap-meta">300 kcal</div>
+                <p><strong>Swap to:</strong> Sweet Potato Fries (120 kcal)</p>
+                <p><strong>Recipe:</strong> Slice sweet potatoes, toss in olive oil, bake at 200°C for 25 mins.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/dessert.jpg" alt="Sugary Desserts" />
+                <h3>Suggary Desserts</h3>
+                <div class="swap-meta"> 200 kcal</div>
+                <p><strong>Swap to:</strong> Fruit Salad(70 kcal)</p>
+                <p><strong>Recipe:</strong> .</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/white bread.jpg" alt="White Bread" />
+                <h3>White Bread</h3>
+                <div class="swap-meta">80 kcal/slice</div>
+                <p><strong>Swap to:</strong> Whole Grain Bread (70 kcal/slice)</p>
+                <p><strong>Recipe:</strong> Choose bread with visible seeds or oats; pair with nut butter or hummus.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/noodles.jpg" alt="Instant Noodles" />
+                <h3>Instant Noodles</h3>
+                <div class="swap-meta">300 kcal/pack</div>
+                <p><strong>Swap to:</strong> Millet Noodles (220 kcal/pack)</p>
+                <p><strong>Recipe:</strong> Cook millet noodles with sautéed veggies and light soy sauce.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/sugar.jpg" alt="Refined Sugar" />
+                <h3>Refined Sugar</h3>
+                <div class="swap-meta">20 kcal/tsp</div>
+                <p><strong>Swap to:</strong> Dates or Honey (15–18 kcal/tsp)</p>
+                <p><strong>Recipe:</strong> Use date paste or a drizzle of honey in desserts, smoothies, or tea for
+                    natural
+                    sweetness.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/tea.jpg" alt="Regular Tea" />
+                <h3>Regular Tea</h3>
+                <div class="swap-meta">40 kcal/cup</div>
+                <p><strong>Swap to:</strong> Herbal Tea (0–5 kcal/cup)</p>
+                <p><strong>Recipe:</strong> Brew tulsi, chamomile, or lemongrass with hot water; enjoy without milk or
+                    sugar.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/sugary_cereal.png" alt="Sugary cereal">
+                <h3>Sugary cereal</h3>
+                <div class="swap-meta">250 kcal (per bowl)</div>
+                <p><strong>Swap to:</strong> Oatmeal (150 kcal)</p>
+                <p><strong>Recipe:</strong> Cook oats with almond milk, top with banana and cinnamon.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Whole_milk_.png" alt="Whole Milk">
+                <h3>Whole Milk</h3>
+                <div class="swap-meta">150 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Almond Milk (30 kcal)</p>
+                <p><strong>Recipe:</strong> Use in smoothies, coffee, or cereal.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/white_rice.png" alt="White rice">
+                <h3>White rice</h3>
+                <div class="swap-meta">200 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Quinoa (120 kcal)</p>
+                <p><strong>Recipe:</strong> Boil quinoa and mix with roasted veggies and lemon dressing.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/buttered_popcorn.png" alt="Buttered popcorn">
+                <h3>Buttered popcorn</h3>
+                <div class="swap-meta">300 kcal (per 3 cups)</div>
+                <p><strong>Swap to:</strong> Air-Popped Popcorn (90 kcal)</p>
+                <p><strong>Recipe:</strong> Pop kernels without oil, season with herbs or nutritional yeast.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/cheese_dip.png" alt="Cheese dip">
+                <h3>Cheese dip</h3>
+                <div class="swap-meta">150 kcal (per 2 tbsp)</div>
+                <p><strong>Swap to:</strong> Hummus (70 kcal)</p>
+                <p><strong>Recipe:</strong> Blend chickpeas, tahini, lemon juice, garlic, and olive oil.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/regular_pasta.jpeg" alt="Regular pasta">
+                <h3>Regular pasta</h3>
+                <div class="swap-meta">220 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Whole Grain Pasta (180 kcal)</p>
+                <p><strong>Recipe:</strong> Toss with tomato sauce, basil, and grilled veggies.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/peanut_butter.png" alt="Sweetened peanut butter">
+                <h3>Sweetened peanut butter</h3>
+                <div class="swap-meta">120 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Natural Nut Butter (90 kcal)</p>
+                <p><strong>Recipe:</strong> Spread on toast or use in smoothies.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/creamy_soup.jpeg" alt="Creamy soup">
+                <h3>Creamy soup</h3>
+                <div class="swap-meta">250 kcal (per bowl)</div>
+                <p><strong>Swap to:</strong> Vegetable Soup (100 kcal)</p>
+                <p><strong>Recipe:</strong> Simmer mixed vegetables with herbs and broth.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/fries_veggie.jpeg" alt="Fries">
+                <h3>Fries</h3>
+                <div class="swap-meta">300 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Grilled Vegetables (80 kcal)</p>
+                <p><strong>Recipe:</strong> Grill zucchini, bell peppers, and carrots with olive oil.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/milkshake.png" alt="Milkshake">
+                <h3>Milkshake</h3>
+                <div class="swap-meta">400 kcal</div>
+                <p><strong>Swap to:</strong> Fruit Smoothie (180 kcal)</p>
+                <p><strong>Recipe:</strong> Blend banana, berries, and almond milk.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/candy.jpeg" alt="Candy">
+                <h3>Candy</h3>
+                <div class="swap-meta">300 kcal (per handful)</div>
+                <p><strong>Swap to:</strong> Homemade Trail Mix (200 kcal)</p>
+                <p><strong>Recipe:</strong> Mix nuts, seeds, and dried fruit.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/crackers.jpeg" alt="Crackers">
+                <h3>Crackers</h3>
+                <div class="swap-meta">100 kcal (per cake)</div>
+                <p><strong>Swap to:</strong> Rice Cakes (35 kcal)</p>
+                <p><strong>Recipe:</strong> Top with nut butter or hummus.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/flour_tortillas.jpeg" alt="Flour tortillas">
+                <h3>Flour tortillas</h3>
+                <div class="swap-meta">150 kcal</div>
+                <p><strong>Swap to:</strong> Spinach Wraps (60 kcal)</p>
+                <p><strong>Recipe:</strong> Fill with grilled veggies and hummus.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/apple_pie.jpeg" alt="Apple pie">
+                <h3>Apple pie</h3>
+                <div class="swap-meta">300 kcal</div>
+                <p><strong>Swap to:</strong> Baked Apples (100 kcal)</p>
+                <p><strong>Recipe:</strong> Bake apples with cinnamon and walnuts.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/caesar_salad.jpeg" alt="Caesar salad" />
+                <h3>Caesar salad</h3>
+                <div class="swap-meta">300 kcal</div>
+                <p><strong>Swap to:</strong> Greek Salad (120 kcal)</p>
+                <p><strong>Recipe:</strong> Mix cucumber, tomato, olives, onion, and feta with olive oil and lemon.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/choclate_milkshake.jpeg" alt="Chocolate milkshake" />
+                <h3>Chocolate milkshake</h3>
+                <div class="swap-meta">400 kcal</div>
+                <p><strong>Swap to:</strong> Protein Shake (180 kcal)</p>
+                <p><strong>Recipe:</strong> Blend protein powder with banana, oats, and almond milk.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/cookies.jpeg" alt="Cookies" />
+                <h3>Cookies</h3>
+                <div class="swap-meta">300 kcal</div>
+                <p><strong>Swap to:</strong> Apple Slices with Peanut Butter (150 kcal)</p>
+                <p><strong>Recipe:</strong> Slice apples and dip in natural peanut butter.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/fried_noodles.jpeg" alt="Fried noodles" />
+                <h3>Fried noodles</h3>
+                <div class="swap-meta">400 kcal</div>
+                <p><strong>Swap to:</strong> Vegetable Stir-Fry (180 kcal)</p>
+                <p><strong>Recipe:</strong> Stir-fry broccoli, bell peppers, and carrots in sesame oil and soy sauce.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/fried_paneer.jpeg" alt="Fried paneer" />
+                <h3>Fried paneer</h3>
+                <div class="swap-meta">300 kcal (per 100g)</div>
+                <p><strong>Swap to:</strong> Grilled Paneer (180 kcal)</p>
+                <p><strong>Recipe:</strong> Grill paneer cubes with spices and lemon juice.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/instant noodles.jpeg" alt="Instant Noodles" />
+                <h3>Instant Noodles</h3>
+                <div class="swap-meta">350 kcal</div>
+                <p><strong>Swap to:</strong> Masala Oats (150 kcal)</p>
+                <p><strong>Recipe:</strong> Cook oats with veggies, turmeric, and chili powder.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/jam.png" alt="Store-bought jam" />
+                <h3>Store-bought jam</h3>
+                <div class="swap-meta">100 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Fruit Chia Jam (50 kcal)</p>
+                <p><strong>Recipe:</strong> Simmer berries with chia seeds and honey until thick.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/mayoonise.jpg" alt="Mayonnaise" />
+                <h3>Mayonnaise</h3>
+                <div class="swap-meta">90 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Mashed Avocado (45 kcal)</p>
+                <p><strong>Recipe:</strong> Mash avocado with salt and pepper for sandwiches or dips.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/white_flour.jpg" alt="White Flour" />
+                <h3>White Flour</h3>
+                <div class="swap-meta">110 kcal (per 1/4 cup)</div>
+                <p><strong>Swap to:</strong> Almond Flour (90 kcal)</p>
+                <p><strong>Recipe:</strong> Use for baking; it's gluten-free and higher in protein.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Cofee_creamer.png" alt="Flavored Coffee Creamer" />
+                <h3>Flavored Coffee Creamer</h3>
+                <div class="swap-meta">35 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Unsweetened Almond Milk + Cinnamon (5 kcal)</p>
+                <p><strong>Recipe:</strong> Add a splash of almond milk and a dash of cinnamon to your coffee.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Salad Croutons.png" alt="Salad Croutons" />
+                <h3>Salad Croutons</h3>
+                <div class="swap-meta">50 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Toasted Nuts or Seeds (40 kcal)</p>
+                <p><strong>Recipe:</strong> Sprinkle walnuts, almonds, or sunflower seeds on your salad for crunch.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Pancake_syrup.jpg" alt="" />
+                <h3>Pancake Syrup</h3>
+                <div class="swap-meta">100 kcal (per 1/4 cup)</div>
+                <p><strong>Swap to:</strong> Fresh Berries & Honey (40 kcal)</p>
+                <p><strong>Recipe:</strong> Warm berries on the stove and drizzle with a little honey on pancakes.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Fried Rice.jpg" alt="Fried Rice" />
+                <h3>Fried Rice</h3>
+                <div class="swap-meta">450 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Brown Rice & Veggie Bowl (250 kcal)</p>
+                <p><strong>Recipe:</strong> Use brown rice, steam veggies, and season with light soy sauce.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/energy_drinks.jpg" alt="Energy Drinks" />
+                <h3>Energy Drinks</h3>
+                <div class="swap-meta">160 kcal (per can)</div>
+                <p><strong>Swap to:</strong> Green Tea (0 kcal)</p>
+                <p><strong>Recipe:</strong> Brew green tea and chill for an antioxidant boost without the sugar crash.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Creamy Mashed Potatoes.jpg" alt="Creamy Mashed Potatoes" />
+                <h3>Creamy Mashed Potatoes</h3>
+                <div class="swap-meta">250 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Mashed Cauliflower (80 kcal)</p>
+                <p><strong>Recipe:</strong> Steam cauliflower and mash with garlic, salt, and a splash of milk.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Ketchup.png" alt="Ketchup" />
+                <h3>Ketchup</h3>
+                <div class="swap-meta">20 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Salsa (5 kcal)</p>
+                <p><strong>Recipe:</strong> Use fresh salsa as a topping for eggs, tacos, and grilled meats.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Cheese Crackers.jpg" alt="Cheese Crackers" />
+                <h3>Cheese Crackers</h3>
+                <div class="swap-meta">150 kcal (per serving)</div>
+                <p><strong>Swap to:</strong> Cucumber Slices (10 kcal)</p>
+                <p><strong>Recipe:</strong> Top cucumber slices with cottage cheese or hummus and seasoning.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/White Flour Pizza Dough.jpg" alt="White Flour Pizza Dough" />
+                <h3>White Flour Pizza Dough</h3>
+                <div class="swap-meta">250 kcal (per crust)</div>
+                <p><strong>Swap to:</strong> Whole Wheat Pizza Dough (200 kcal)</p>
+                <p><strong>Recipe:</strong> Use a whole wheat crust for added fiber and nutrients.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Biscuits.png" alt="Packaged Biscuits" />
+                <h3>Packaged Biscuits</h3>
+                <div class="swap-meta">150 kcal (per 2)</div>
+                <p><strong>Swap to:</strong> Whole Grain Rusks or Mathri (80 kcal)</p>
+                <p><strong>Recipe:</strong> Choose rusks or savory mathri made from whole grains.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Doughnuts.jpg" alt="Doughnuts" />
+                <h3>Doughnuts</h3>
+                <div class="swap-meta">300 kcal (per doughnut)</div>
+                <p><strong>Swap to:</strong> Baked Apple Donuts (120 kcal)</p>
+                <p><strong>Recipe:</strong> Slice apples into rings, coat in cinnamon, and bake.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/vegetable oil.png" alt="Vegetable Oil" />
+                <h3>Vegetable Oil</h3>
+                <div class="swap-meta">120 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Olive Oil or Coconut Oil (120 kcal, healthier fats)</p>
+                <p><strong>Recipe:</strong> Use healthy fats like olive oil for dressing and coconut oil for cooking.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/salted cashew.png" alt="Salted Peanuts/Cashews" />
+                <h3>Salted Peanuts/Cashews</h3>
+                <div class="swap-meta">170 kcal (per 1/4 cup)</div>
+                <p><strong>Swap to:</strong> Unsalted Nuts (170 kcal, less sodium)</p>
+                <p><strong>Recipe:</strong> Enjoy raw or lightly roasted unsalted nuts for a heart-healthy snack.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Packaged Hot Chocolate.jpg" alt="Packaged Hot Chocolate" />
+                <h3>Packaged Hot Chocolate</h3>
+                <div class="swap-meta">200 kcal (per serving)</div>
+                <p><strong>Swap to:</strong> Cocoa Powder + Unsweetened Milk (100 kcal)</p>
+                <p><strong>Recipe:</strong> Mix unsweetened cocoa, milk, and a tiny bit of honey or stevia.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Sugary Gelatin,Jello.jpg" alt="Sugary Gelatin/Jello" />
+                <h3>Sugary Gelatin/Jello</h3>
+                <div class="swap-meta">100 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Fruit-infused Agar-Agar (40 kcal)</p>
+                <p><strong>Recipe:</strong> Use agar-agar with fresh fruit juice and minimal sweetener.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/fruit juice.png" alt="Packaged Fruit Juices" />
+                <h3>Packaged Fruit Juices</h3>
+                <div class="swap-meta">120 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Whole Fruit (60 kcal + Fiber)</p>
+                <p><strong>Recipe:</strong> Eat an orange instead of drinking a glass of orange juice.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/fast food.jpg" alt="Fast Food Breakfast Sandwich" />
+                <h3>Fast Food Breakfast Sandwich</h3>
+                <div class="swap-meta">400 kcal</div>
+                <p><strong>Swap to:</strong> Homemade Egg White Omelet (200 kcal)</p>
+                <p><strong>Recipe:</strong> Cook egg whites with veggies and serve on a whole wheat English muffin.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Heavy Cream (for soups).jpg" alt="Heavy Cream (for soups)" />
+                <h3>Heavy Cream (for soups)</h3>
+                <div class="swap-meta">50 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Blended White Beans (15 kcal)</p>
+                <p><strong>Recipe:</strong> Blend cooked cannellini beans into soups for a creamy, high-fiber texture.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Sugary Salad Dressings.jpg" alt="Sugary Salad Dressings" />
+                <h3>Sugary Salad Dressings</h3>
+                <div class="swap-meta">80 kcal (per 2 tbsp)</div>
+                <p><strong>Swap to:</strong> Vinaigrette (40 kcal)</p>
+                <p><strong>Recipe:</strong> Mix olive oil, vinegar (balsamic/apple cider), lemon juice, and herbs.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Refried Beans.jpg" alt="Refried Beans (Lard-based)" />
+                <h3>Refried Beans (Lard-based)</h3>
+                <div class="swap-meta">100 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Black Beans (80 kcal)</p>
+                <p><strong>Recipe:</strong> Season and mash black beans with lime and a pinch of cumin.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/White Burger Buns.jpg" alt="White Burger Buns" />
+                <h3>White Burger Buns</h3>
+                <div class="swap-meta">150 kcal</div>
+                <p><strong>Swap to:</strong> Portobello Mushroom Caps (50 kcal)</p>
+                <p><strong>Recipe:</strong> Grill mushroom caps and use them as the bun for your burger.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Creamy White Pasta Sauce.jpg" alt="Creamy White Pasta Sauce" />
+                <h3>Creamy White Pasta Sauce</h3>
+                <div class="swap-meta">200 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Pesto or Marinara Sauce (80-100 kcal)</p>
+                <p><strong>Recipe:</strong> Use a lighter tomato-based or herb-based sauce.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Sweet Dessert Wine.jpg" alt="Sweet Dessert Wine" />
+                <h3>Sweet Dessert Wine</h3>
+                <div class="swap-meta">150 kcal (per glass)</div>
+                <p><strong>Swap to:</strong> Sparkling Water with Fruit (10 kcal)</p>
+                <p><strong>Recipe:</strong> Mix sparkling water with sliced strawberries and mint for a light drink.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Hot Dogs.jpg" alt="Hot Dogs" />
+                <h3>Hot Dogs</h3>
+                <div class="swap-meta">200 kcal (per dog)</div>
+                <p><strong>Swap to:</strong> Veggie Sausage (120 kcal)</p>
+                <p><strong>Recipe:</strong> Grill lean sausages and serve on whole grain buns.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/oil1.jpg" alt="Corn Oil/Soybean Oil" />
+                <h3>Corn Oil/Soybean Oil</h3>
+                <div class="swap-meta">120 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Avocado Oil (120 kcal, healthier fats)</p>
+                <p><strong>Recipe:</strong> Use avocado oil for high-heat cooking like searing or deep frying.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/sweetner.png" alt="Artificial Sweeteners (Aspartame/Sucralose)" />
+                <h3>Artificial Sweeteners (Aspartame/Sucralose)</h3>
+                <div class="swap-meta">0 kcal</div>
+                <p><strong>Swap to:</strong> Stevia or Monk Fruit (0 kcal, natural sources)</p>
+                <p><strong>Recipe:</strong> Use natural, plant-derived sweeteners in coffee and recipes.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/granolas.png" alt="Store-Bought Granola" />
+                <h3>Store-Bought Granola</h3>
+                <div class="swap-meta">200 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Homemade Low-Sugar Granola (150 kcal)</p>
+                <p><strong>Recipe:</strong> Bake rolled oats with nuts, spices, and minimal honey/maple syrup.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/potatoes.png" alt="Au Gratin Potatoes" />
+                <h3>Au Gratin Potatoes</h3>
+                <div class="swap-meta">350 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Roasted Root Vegetables (150 kcal)</p>
+                <p><strong>Recipe:</strong> Roast sweet potatoes, carrots, and beets with herbs and a light dressing.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/tea1.png" alt="Chai with Lots of Sugar" />
+                <h3>Chai with Lots of Sugar</h3>
+                <div class="swap-meta">100 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Spiced Black Tea (30 kcal)</p>
+                <p><strong>Recipe:</strong> Brew tea with spices like ginger, cardamom, and use minimal jaggery or
+                    honey.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/poha.png" alt="Poha/Upma (Instant Mix)" />
+                <h3>Poha/Upma (Instant Mix)</h3>
+                <div class="swap-meta">200 kcal (per serving)</div>
+                <p><strong>Swap to:</strong> Homemade Poha/Upma with Veggies (150 kcal)</p>
+                <p><strong>Recipe:</strong> Prepare from scratch and load with fresh vegetables.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/gulab jamun.png" alt="Heavy Milk-Based Indian Sweets (e.g., Gulab Jamun)" />
+                <h3>Heavy Milk-Based Indian Sweets (e.g., Gulab Jamun)</h3>
+                <div class="swap-meta">250 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Date and Fig Rolls (100 kcal)</p>
+                <p><strong>Recipe:</strong> Blend dates and figs with nuts and roll into small balls for a treat.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/bhujia.png" alt="Deep-Fried Namkeen/Bhujia" />
+                <h3>Deep-Fried Namkeen/Bhujia</h3>
+                <div class="swap-meta">200 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Roasted Chana (Puffed Chickpeas) (100 kcal)</p>
+                <p><strong>Recipe:</strong> Roast chana with a light seasoning of salt and chaat masala.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/naan.png" alt="White Flour Naan/Tandoori Roti" />
+                <h3>White Flour Naan/Tandoori Roti</h3>
+                <div class="swap-meta">180 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Whole Wheat Roti/Chapati (90 kcal)</p>
+                <p><strong>Recipe:</strong> Cook whole wheat chapatis on a tawa (griddle).</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/mango.png" alt="Mango Milkshake" />
+                <h3>Mango Milkshake</h3>
+                <div class="swap-meta">300 kcal (per glass)</div>
+                <p><strong>Swap to:</strong> Mango Lassi (180 kcal)</p>
+                <p><strong>Recipe:</strong> Blend mango with plain yogurt and a touch of cardamom.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/bhature.png" alt="Bhature (Fried Bread)" />
+                <h3>Bhature (Fried Bread)</h3>
+                <div class="swap-meta">250 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Whole Wheat Kulcha (150 kcal)</p>
+                <p><strong>Recipe:</strong> Bake or lightly grill whole wheat kulcha instead of deep frying.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/samosa.png" alt="Samosa" />
+                <h3>Samosa</h3>
+                <div class="swap-meta">300 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Baked or Air-Fried Samosa (150 kcal)</p>
+                <p><strong>Recipe:</strong> Bake or air-fry the samosa instead of deep-frying.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/dal makhni.jpg" alt="Dal Makhani" />
+                <h3>Dal Makhani (Creamy)</h3>
+                <div class="swap-meta">350 kcal (per serving)</div>
+                <p><strong>Swap to:</strong> Dal Tadka or Palak Dal (150 kcal)</p>
+                <p><strong>Recipe:</strong> Choose lighter, broth-based lentil preparations.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/boondi raita.jpg" alt="Boondi Raita (Fried Snack in Yogurt)" />
+                <h3>Boondi Raita (Fried Snack in Yogurt)</h3>
+                <div class="swap-meta">200 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Cucumber/Lauki Raita (80 kcal)</p>
+                <p><strong>Recipe:</strong> Use fresh grated cucumber or steamed bottle gourd with yogurt and spices.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/bhajiya.jpg" alt="Pakoras/Bhajiyas" />
+                <h3>Pakoras/Bhajiyas (Fritters)</h3>
+                <div class="swap-meta">150 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Steamed Dhokla (80 kcal)</p>
+                <p><strong>Recipe:</strong> Enjoy steamed, fermented snacks like dhokla instead of fried ones.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/mithai.png" alt="Syrup-Soaked Mithai" />
+                <h3>Syrup-Soaked Mithai</h3>
+                <div class="swap-meta">250 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Besan Ladoo (120 kcal)</p>
+                <p><strong>Recipe:</strong> Opt for dry, minimally-sweetened sweets made with gram flour or whole
+                    grains.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/aloo tikki.jpg" alt="Fried Aloo Tikki" />
+                <h3>Fried Aloo Tikki</h3>
+                <div class="swap-meta">200 kcal (per tikki)</div>
+                <p><strong>Swap to:</strong> Air-Fried/Shallow-Fried Tikki (120 kcal)</p>
+                <p><strong>Recipe:</strong> Use an air fryer or minimal oil on a tawa to crisp up the potato patty.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/butter chicken paneer.jpg" alt="Butter Paneer (Heavy Cream)" />
+                <h3>Butter Paneer (Heavy Cream)</h3>
+                <div class="swap-meta">450 kcal (per serving)</div>
+                <p><strong>Swap to:</strong> Tandoori/Bhuna Curry (250 kcal)</p>
+                <p><strong>Recipe:</strong> Choose curries cooked with yogurt or tomato bases, rather than cream/cashew
+                    paste.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Sweetened Shrikhand.jpg" alt="Sweetened Shrikhand/Amrakhand" />
+                <h3>Sweetened Shrikhand/Amrakhand</h3>
+                <div class="swap-meta">300 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Plain Greek Yogurt with Fruit (150 kcal)</p>
+                <p><strong>Recipe:</strong> Eat plain, unsweetened yogurt topped with fresh fruit like mango or berries.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/rice kheer.jpg" alt="Rice Kheer" />
+                <h3>Rice Kheer (Dessert)</h3>
+                <div class="swap-meta">300 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Sabudana Kheer (180 kcal)</p>
+                <p><strong>Recipe:</strong> Make kheer with sago/tapioca pearls or fox nuts (makhana) and less sugar.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/rooh afza.png" alt="Rooh Afza/Sugary Syrups" />
+                <h3>Rooh Afza/Sugary Syrups</h3>
+                <div class="swap-meta">100 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Fresh Mint & Lime Water (10 kcal)</p>
+                <p><strong>Recipe:</strong> Muddle mint leaves and lime wedges in cold water for a refreshing drink.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Chaat Mix.jpg" alt="Packaged Chaat Mix" />
+                <h3>Packaged Chaat Mix</h3>
+                <div class="swap-meta">200 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Homemade Sprouts Chaat (100 kcal)</p>
+                <p><strong>Recipe:</strong> Mix boiled sprouts, chopped onions, tomatoes, and a light chaat masala.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Samosa Chaat.jpg" alt="Samosa Chaat" />
+                <h3>Samosa Chaat</h3>
+                <div class="swap-meta">400 kcal (per bowl)</div>
+                <p><strong>Swap to:</strong> Dahi Bhalla/Vada (180 kcal)</p>
+                <p><strong>Recipe:</strong> Use soaked, non-fried lentil vadas with yogurt and chutneys.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Vada Pav.jpg" alt="Vada Pav" />
+                <h3>Vada Pav</h3>
+                <div class="swap-meta">300 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Missal Pav (200 kcal)</p>
+                <p><strong>Recipe:</strong> Have the lentil/sprouts-based missal curry with a single whole wheat pav.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Puri.jpg" alt="Puri (Fried Bread)" />
+                <h3>Puri (Fried Bread)</h3>
+                <div class="swap-meta">150 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Jowar/Bajra Bhakri (90 kcal)</p>
+                <p><strong>Recipe:</strong> Serve curries with flatbreads made from millets, which are higher in fiber.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Jalebi.jpg" alt="Jalebi/Imarti" />
+                <h3>Jalebi/Imarti</h3>
+                <div class="swap-meta">250 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Dry Fruit Chikki (100 kcal)</p>
+                <p><strong>Recipe:</strong> Enjoy small portions of chikki made with peanuts/sesame and jaggery.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Lassi.jpg" alt="Sweetened Lassi (High Sugar)" />
+                <h3>Sweetened Lassi (High Sugar)</h3>
+                <div class="swap-meta">200 kcal (per glass)</div>
+                <p><strong>Swap to:</strong> Buttermilk/Chaas (50 kcal)</p>
+                <p><strong>Recipe:</strong> Mix yogurt with water, salt, ginger, and green chili for a digestive drink.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/moong dal.jpg" alt="Fried Moong Dal/Chana Dal Snack" />
+                <h3>Fried Moong Dal/Chana Dal Snack</h3>
+                <div class="swap-meta">180 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Steamed Moong Dal (100 kcal)</p>
+                <p><strong>Recipe:</strong> Steam lentils and season with a light tempering of curry leaves and mustard
+                    seeds.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Chocolate Hazelnut Spread.jpg" alt="Chocolate Hazelnut Spread" />
+                <h3>Chocolate Hazelnut Spread</h3>
+                <div class="swap-meta">100 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Mashed Banana + Cocoa Powder (50 kcal)</p>
+                <p><strong>Recipe:</strong> Mix mashed banana with unsweetened cocoa powder for a low-sugar spread.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Cream Cheese.jpg" alt="Cream Cheese" />
+                <h3>Cream Cheese</h3>
+                <div class="swap-meta">50 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Low-Fat Cottage Cheese Spread (20 kcal)</p>
+                <p><strong>Recipe:</strong> Blend cottage cheese with chives and spices for a savory spread.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Sweetened Frappuccino.jpg" alt="Sweetened Frappuccino/Coffee" />
+                <h3>Sweetened Frappuccino/Coffee</h3>
+                <div class="swap-meta">350 kcal</div>
+                <p><strong>Swap to:</strong> Cold Brew with a Splash of Milk (50 kcal)</p>
+                <p><strong>Recipe:</strong> Use plain cold brew and add a minimal amount of low-fat milk.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Store-Bought Meat Marinades.jpg" alt="Store-Bought Meat Marinades (High Sugar)" />
+                <h3>Store-Bought Meat Marinades (High Sugar)</h3>
+                <div class="swap-meta">50 kcal (per tbsp)</div>
+                <p><strong>Swap to:</strong> Yogurt and Spice Marinade (20 kcal)</p>
+                <p><strong>Recipe:</strong> Marinate with plain yogurt, lemon juice, ginger-garlic paste, and chili
+                    powder.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Cheesy Grilled Sandwich.jpg" alt="Cheesy Grilled Sandwich" />
+                <h3>Cheesy Grilled Sandwich</h3>
+                <div class="swap-meta">400 kcal</div>
+                <p><strong>Swap to:</strong> Veggie & Hummus Sandwich (250 kcal)</p>
+                <p><strong>Recipe:</strong> Use whole wheat bread, hummus, and a lot of fresh veggies.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Bread Pakora.jpg" alt="Bread Pakora" />
+                <h3>Bread Pakora (Fried)</h3>
+                <div class="swap-meta">200 kcal (per piece)</div>
+                <p><strong>Swap to:</strong> Besan Cheela/Pudla (120 kcal)</p>
+                <p><strong>Recipe:</strong> Cook a savory pancake made from gram flour (besan) and vegetables.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Aloo Bhujia.jpg" alt="Aloo Bhujia" />
+                <h3>Aloo Bhujia (Fried Snack)</h3>
+                <div class="swap-meta">200 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Makhana (Fox Nuts) (100 kcal)</p>
+                <p><strong>Recipe:</strong> Roast makhana with a light spray of olive oil and salt.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Fried Gobi Manchurian.jpg" alt="Fried Gobi Manchurian" />
+                <h3>Fried Gobi Manchurian</h3>
+                <div class="swap-meta">350 kcal (per serving)</div>
+                <p><strong>Swap to:</strong> Steamed/Sautéed Gobi (150 kcal)</p>
+                <p><strong>Recipe:</strong> Lightly sauté cauliflower florets in soy and vinegar instead of deep frying.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/White Rice1.jpg" alt="White Rice" />
+                <h3>White Rice (Dinner Staple)</h3>
+                <div class="swap-meta">200 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Brown Rice/Barnyard Millet (160 kcal)</p>
+                <p><strong>Recipe:</strong> Swap your regular rice for a whole grain or millet option for better fiber.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/Packaged Orange Juice.jpg" alt="Packaged Orange Juice" />
+                <h3>Packaged Orange Juice</h3>
+                <div class="swap-meta">110 kcal (per cup)</div>
+                <p><strong>Swap to:</strong> Water with Orange Slices (5 kcal)</p>
+                <p><strong>Recipe:</strong> Add slices of fresh orange to your water for flavor and hydration.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/halwa.png" alt="Halwa" />
+                <h3>Halwa (Ghee-rich Sweet)</h3>
+                <div class="swap-meta">300 kcal (per 1/2 cup)</div>
+                <p><strong>Swap to:</strong> Fruit Custard (180 kcal)</p>
+                <p><strong>Recipe:</strong> Make custard with low-fat milk and load it with fresh fruit pieces.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/cheesy pizza.png" alt="Extra Cheesy Pizza" />
+                <h3>Extra Cheesy Pizza</h3>
+                <div class="swap-meta">400 kcal (per slice)</div>
+                <p><strong>Swap to:</strong> Thin Crust Veggie Pizza (250 kcal)</p>
+                <p><strong>Recipe:</strong> Use a whole wheat, thin crust and load it with vegetables instead of cheese.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/bread crumbs.png" alt="White Bread Crumbs" />
+                <h3>White Bread Crumbs (for coating)</h3>
+                <div class="swap-meta">100 kcal (per 1/4 cup)</div>
+                <p><strong>Swap to:</strong> Crushed Oats/Cornflakes (80 kcal)</p>
+                <p><strong>Recipe:</strong> Use crushed oats or whole grain cornflakes to coat cutlets before baking.
+                </p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/lemonade.png" alt="Sweet Lemonade" />
+                <h3>Sweet Lemonade</h3>
+                <div class="swap-meta">120 kcal (per glass)</div>
+                <p><strong>Swap to:</strong> Mint and Cucumber Water (5 kcal)</p>
+                <p><strong>Recipe:</strong> Mix water with slices of cucumber and mint for a super refreshing, low-cal
+                    drink.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/sugary_drinks.png" alt="Sugary drinks" />
+                <h3>Sugary drinks</h3>
+                <div class="swap-meta">150 kcal</div>
+                <p><strong>Swap to:</strong> Herbal Tea (0 kcal)</p>
+                <p><strong>Recipe:</strong> Brew mint, tulsi, or chamomile for a calming drink.</p>
+            </div>
+            <div class="swap-card">
+                <img src="../images/egg.jpeg" alt="Whole eggs">
+                <h3>Whole eggs</h3>
+                <div class="swap-meta">70 kcal (per egg white)</div>
+                <p><strong>Swap to:</strong> Egg Whites (17 kcal)</p>
+                <p><strong>Recipe:</strong> Scramble with spinach and tomatoes.</p>
+            </div>
+        </div>
+    </section>
+
+    <h2>📚 Related Articles</h2>
+    <a href="https://www.bbcgoodfood.com/howto/guide/healthy-food-swaps" target="_blank">BBC Good Food: Healthy Swaps
+        Guide</a><br>
+    <a href="https://www.healthline.com/nutrition/healthy-food-swaps" target="_blank">Healthline: Smart Food
+        Swaps</a><br>
+    <a href="https://www.eatthis.com/food-swaps-that-improve-your-diet/" target="_blank">14 Simple Food Swaps That
+        Improve Your Diet</a><br>
+    <a href="https://chefstandards.com/healthy-food-swaps/" target="_blank">29 Easy Swaps for Healthier Meals</a><br>
+    <a href="https://ancientnutrition.com/blogs/all/healthy-food-swaps" target="_blank">20 Healthy Food Swaps to Boost
+        Your Health</a><br>
+
+    <footer>
+        <p>Know Your Bites - Made with care .</p>
+        <a href="../index.html" class="season-button">Home</a>
+    </footer>
+
+    <script src="swap.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Processed & Packaged Foods Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #8e44ad;
+      --secondary: #f5eafc;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #f5eafc, #e8daef);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #9b59b6, #8e44ad);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #f8e9ff;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "📦";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #6c3483;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Processed & Packaged Foods</h1>
+    <p>📦 Simple checks to detect adulterants in ready-to-eat and packaged items</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Expired Ingredients</h2>
+        <p>Check manufacturing and expiry dates. Avoid products with faded or tampered labels.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Non-Permitted Preservatives</h2>
+        <p>Review ingredient list for banned chemicals like boric acid or formalin. Report suspicious items.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Excess Salt or Sugar</h2>
+        <p>Taste and compare with standard versions. Excessive amounts may be used to mask spoilage.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Artificial Flavor Enhancers</h2>
+        <p>Check for monosodium glutamate (MSG) or synthetic flavor codes. May cause allergic reactions in sensitive individuals.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Packaging Tampering</h2>
+        <p>Inspect seals and wrappers. Broken or resealed packaging may indicate contamination or counterfeiting.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Synthetic Coloring</h2>
+        <p>Bright unnatural colors in snacks or sweets may indicate synthetic dyes. Rub with moist cotton to test.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Spoiled Ready Meals</h2>
+        <p>Check for sour smell, bloated packaging, or discoloration. These are signs of microbial spoilage.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Unlisted Allergens</h2>
+        <p>Always read labels for allergen warnings. Some products may omit key ingredients like nuts or gluten.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Global Page Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Website Title */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Hero heading */
+.hero h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+/* Hero description text */
+.hero p {
+    font-size: 1.1rem;
+    color: #388e3c;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Search Bar Section */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Search input field */
+#swapSearch {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #388e3c;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect on search input */
+#swapSearch:focus {
+    border-color: #1b5e20;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+}
+
+/* Swap List Section */
+.swap-list {
+    padding: 2rem;
+}
+
+/* Section title */
+.swap-list h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2e7d32;
+}
+
+/* Grid layout for swap cards */
+.swap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Individual swap card */
+.swap-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover animation */
+.swap-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Swap image */
+.swap-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Swap title */
+.swap-card h3 {
+    margin: 1rem;
+    color: #388e3c;
+}
+
+/* Information (calories, category, etc.) */
+.swap-meta {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Swap description */
+.swap-card p {
+    margin: 0.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}

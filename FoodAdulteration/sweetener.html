@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweeteners Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #e67e22;
+      --secondary: #fff3e0;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #fff3e0, #ffe0cc);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ffe6cc;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🍬";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #a84300;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sweeteners</h1>
+    <p>🍭 Simple tests to detect adulterants in sugar, jaggery, and honey</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Chalk Powder in Sugar</h2>
+        <p>Dissolve sugar in water. Chalk powder settles at the bottom, while pure sugar dissolves completely.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Washing Soda in Sugar</h2>
+        <p>Dissolve the sugar in water and shake well. If the solution froths, it suggests the presence of washing powder.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Lead Salts in Sugar</h2>
+        <p>Not safe for home testing. Lead salts are toxic and require lab analysis.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Chalk Powder in Jaggery</h2>
+        <p>Mix jaggery in water. If chalk is present, it settles at the bottom as residue.</p>
+      </div>
+
+    
+
+      <div class="card">
+        <h2>5. Artificial Sweeteners in Honey</h2>
+        <p>Dip a cotton wick in honey and light it. Pure honey burns cleanly; adulterated honey may crackle or resist burning.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Sugar Syrup in Honey</h2>
+        <p>Place a drop of honey on blotting paper. Pure honey stays firm; sugar syrup spreads or gets absorbed.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Water in Honey</h2>
+        <p>Dip a matchstick in honey and strike. If it lights easily, honey is pure. Watered honey prevents ignition.</p>
+      </div>
+    </div>
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>

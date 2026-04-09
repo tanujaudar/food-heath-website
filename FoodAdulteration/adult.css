@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('01_.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #2c3e50;
+}
+
+/* Page Overlay */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Title & Subtitle */
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #8e44ad;
+    background: linear-gradient(to right, #dcd6f7, #f3e5f5);
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Information Section */
+section.info-section {
+    background-color: #fdf6ff;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 2;
+    min-width: 300px;
+}
+
+.info-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Articles / Links Section */
+.articles-section {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f2ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.articles-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #8e44ad;
+}
+
+.articles-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.articles-section li {
+    margin-bottom: 12px;
+}
+
+/* Article links */
+.articles-section a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.articles-section a:hover {
+    color: #8e44ad;
+    text-decoration: underline;
+}
+
+/* Category Buttons Grid */
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Individual category button */
+a.category-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Colors */
+a.category-btn:nth-child(1)  { background-color: #9370DB; color: #003366; }
+a.category-btn:nth-child(2)  { background-color: #9370DB; }
+a.category-btn:nth-child(3)  { background-color: #9370DB; color: black; }
+a.category-btn:nth-child(4)  { background-color: #9370DB; }
+a.category-btn:nth-child(5)  { background-color: #9370DB; }
+a.category-btn:nth-child(6)  { background-color: #9370DB; }
+a.category-btn:nth-child(7)  { background-color: #9370DB; }
+a.category-btn:nth-child(8)  { background-color: #9370DB; }
+a.category-btn:nth-child(9)  { background-color: #9370DB; }
+a.category-btn:nth-child(10) { background-color: #9370DB; }
+a.category-btn:nth-child(11) { background-color: #9370DB; }
+a.category-btn:nth-child(12) { background-color: #9370DB; }
+
+/* Hover animation */
+a.category-btn:hover {
+    filter: brightness(90%);
+    transform: scale(1.03);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #9370DB;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+}

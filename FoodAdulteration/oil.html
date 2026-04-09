@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oil and Fats Adulteration Tests</title>
+  <style>
+    :root {
+      --primary: #9b59b6;
+      --secondary: #fceff9;
+      --text-dark: #2c3e50;
+      --text-light: #555;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #fceff9, #e0c3fc);
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #9b59b6, #8e44ad);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #f8e9ff;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "🛢️";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 80px;
+      color: #f0f0f0;
+      transform: rotate(-15deg);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #6c3483;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin: 60px 0 20px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oil and Fats</h1>
+    <p>✨ Simple tests to detect adulterants in edible oils</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h2>1. Argemone Oil in Mustard Oil</h2>
+        <p>Rub a few drops of oil on your palms.A chemical smell or an unusual, sharp odor indicates adulteration.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Mineral Oil Detection</h2>
+        <p>Shake the oil with equal volume of alcohol. Mineral oil forms a uniform layer, unlike pure oil.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Mixed Oils in Coconut Oil</h2>
+        <p>Refrigerate the sample. Pure coconut oil solidifies fully; mixed oils remain partially liquid.</p>
+      </div>
+
+      <div class="card">
+        <h2>4. Castor Oil in Edible Oils</h2>
+        <p>Mix with petroleum ether. Castor oil separates as a distinct layer due to its density.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Rancidity in Oils</h2>
+        <p>Smell the oil. Rancid oils emit a sharp, unpleasant odor and may taste bitter. Heating may cause early smoking.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Palmolein in Groundnut Oil</h2>
+        <p>place a sample in the refrigerator for 2-4 hours; if it solidifies, it is likely adulterated with palmolein, as pure groundnut oil should remain liquid</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Castor Oil in Coconut Oil</h2>
+        <p>the presence of castor oil in coconut oil by observing the thickness . Coconut oil is much lighter and will feel smooth, while castor oil is thick and viscous.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Sesame Oil in Other Oils</h2>
+        <p>Add fertilizers and sugar to the oil. A red color indicates sesame oil.</p>
+      </div>
+
+      <div class="card">
+        <h2>9. Coloring Agents</h2>
+        <p>Rub oil on white paper and expose to sunlight. Artificial colors leave a visible stain.</p>
+      </div>
+
+      
+
+    <a href="adult.html" class="back-link">← Back to Home</a>
+  </div>
+
+  <footer>
+    Learn more at <a href="https://www.fssai.gov.in/" target="_blank">FSSAI</a>
+  </footer>
+
+</body>
+</html>
